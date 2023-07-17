@@ -1,0 +1,116 @@
+
+div.treeview {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+div.treeview div.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  height: 1.4em;
+}
+
+div.treeview div.handlecontainer {
+  display: flex;
+  flex-direction: column;
+  width: 0.5em;
+}
+
+div.treeview > div.line > div.vline {
+  background-image:url('vertical_line.png');
+  margin:0;
+  padding: 0;
+  background-size: contain;
+  background-position: center;
+  width: 0.5em;
+}
+
+div.treeview div.handlecontainer div.vline {
+  background-image:url('vertical_line.png');
+  flex: 1 0 auto;
+  margin:0;
+  padding: 0;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+}
+
+div.treeview div.handlecontainer div.vspace {
+  background-image:url('vertical_space.png');
+  flex: 1 0 auto;
+  margin:0;
+  padding: 0;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+}
+
+
+div.treeview div.plushandle {
+  background-image:url('plus_handle.png');
+  width: 0.5em;
+  height: 0.5em;
+  margin:0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+div.treeview div.minushandle {
+  background-image:url('minus_handle.png');
+  width: 0.5em;
+  height: 0.5em;
+  margin:0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+div.treeview div.branch {
+  background-image:url('branch.png');
+  width: 0.5em;
+  height: 0.5em;
+  margin:0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+div.treeview div.end {
+  background-image:url('end.png');
+  width: 0.5em;
+  height: 0.5em;
+  margin:0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+div.treeview div.spacer {
+  width: 0.5em;
+  flex-shrink: 0;
+}
+
+div.treeview div.spacer {
+  width: 0.5em;
+}
+
+
+div.treeview div.text {
+  margin-left: 0.3em;
+}
+
+pre {
+  margin-top: 0;
+}
+
+span.typeinfo {
+  color: lightgrey;
+}
+
+div.treeview {
+  white-space: nowrap;
+}
+
