@@ -100,17 +100,29 @@ div.treeview div.spacer {
 
 div.treeview div.text {
   margin-left: 0.3em;
+  color: blue;
+}
+
+div.treeview div.text span.typeinfo {
+  color: lightgrey;
+}
+
+div.treeview div.text span.value {
+  color: green;
+  font-weight: bold;
+  font-family: monospace;
 }
 
 pre {
   margin-top: 0;
 }
 
-span.typeinfo {
-  color: lightgrey;
-}
-
 div.treeview {
   white-space: nowrap;
 }
+
+div.treeview div.lines {
+  opacity: 50%;
+}
+
 

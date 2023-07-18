@@ -42,14 +42,14 @@ function TreeView(props: any) {
         const hasChildren = obj.children.length > 0
         return (hasChildren)
             ? <div className={obj.isOpen ? 'minushandle' : 'plushandle'}></div>
-            : <div className={isLast ? 'end' : 'branch'}></div>
+            : <div className={isLast ? 'end lines' : 'branch lines'}></div>
     }
 
     const createHandleContainer = (obj: any, isLast: boolean) => {
         return <div className="handlecontainer" onClick={()=>toggleOpen(obj)}>
-            <div className="vline"></div>
+            <div className="vline lines"></div>
             {createHandle(obj, isLast)}
-            <div className={isLast ? 'vspace' : 'vline'}></div>
+            <div className={isLast ? 'vspace' : 'vline lines'}></div>
         </div>
     }
 
@@ -57,7 +57,7 @@ function TreeView(props: any) {
         const intro = context.map(symbol => {
             switch (symbol) {
                 case '|': {
-                    return <div className="vline"></div>
+                    return <div className="vline lines"></div>
                 }
                 default: {
                     return <div className="spacer"></div>
